@@ -1,0 +1,13 @@
+run = "streamlit run main.py --server.port 8501 --server.headless true"
+modules = ["python-3.11"]
+
+[deployment]
+run = ["sh", "-c", "streamlit run main.py"]
+
+[[ports]]
+localPort = 8501
+externalPort = 80
+
+[[ports]]
+localPort = 8502
+externalPort = 3000
