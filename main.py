@@ -10,6 +10,7 @@ st.set_page_config(
 
 # Cria o bot apenas uma vez
 if "bot" not in st.session_state:
+    load_dotenv()
     api_key = os.getenv("GEMINI_API_KEY")
 
     # Mantém um perfil padrão, caso sua classe Bot precise disso
