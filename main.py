@@ -1,5 +1,6 @@
 from chatbot import Bot
 import streamlit as st
+from dotenv import load_dotenv
 import os
 
 # Configuração da página
